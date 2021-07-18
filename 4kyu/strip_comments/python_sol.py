@@ -15,3 +15,5 @@ def solution(string,markers):
     # Join line by \n
     result = '\n'.join(lines)
     return result
+
+# Time consumed: ~30 minutes
