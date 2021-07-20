@@ -14,7 +14,7 @@ def decode_resistor_colors(bands):
     # Split bands into list
     bands = bands.split(' ')
     # Define ohms
-    ohms = resistor_colors[bands[0]] * 10 + resistor_colors[bands[1]] * 10**resistor_colors[bands[2]]
+    ohms = (resistor_colors[bands[0]] * 10 + resistor_colors[bands[1]]) * 10**resistor_colors[bands[2]]
     # Define tolerance
     tolerance = resistor_colors[bands[3]] if len(bands) > 3 else 20
     # Return result based on the amount of ohms
